@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+    margin:0;
+    padding: 0px;
+    /* box-sizing faz com que a borda faça parte da conta da largura*/
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    background-color: #490449;
+}
+body {
+    /* position: relative; new */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#login {
+    
+    background-color: white;
+    height: 627px;
+    width: 311px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.647);
+    overflow: hidden; /* new */
+
+    transition: width 1s, height .3s; /* new */
+    transition-timing-function: ease; /* new */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#container-imagem {
+    display: block;/* new */
+    background-image: url(../imagens/hexa1000.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 237px;
+   /*  width: 311px; */
+}
+
+#container-formulario {
+    display: block;/* new */
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+#titulo {
+    text-align: center;
+    padding: 10px;
+
+}
+
+#paragrafo {
+    padding-bottom: 10px;
+    text-align: justify;
+    line-height: 1.4em;
+
+}
+.formulario-caixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #920992;
+    height: 50px;
+    margin-top: 5px; /* new */
+    margin-bottom: 5px;/* new */
+    width: 99%; /* new */
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.248);
+    padding-bottom: 1px;
+    padding-right: 3px;
+    text-align: center;
+    
+    
+}
+.material-symbols-outlined {
+    margin: 5px 9px 0px 10px;
+    text-align: left;
+}
+
+#caixa-texto1 {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+    
+}
+
+#caixa-texto2 {
+    background-color: #add8e6;
+    text-align: center;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+}
+
+#botao-entrar {
+    background-color: lightblue;
+    color: white;
+    height: 40px;
+    width: 100%; /* % PARA OCUPAR A LARGURA DO CONTAINER E NAO VW */
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.248);
+    border: 2px solid lightblue;
+    text-align: center;
+    cursor: pointer;
+}
+#botao-entrar:hover {
+    background-color: rgb(61, 173, 214);
+}
+
+.formulario-caixa-2{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 40px;
+    width: 99%;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.248);
+    border: 2px solid lightblue;
+    text-align: center;
+    margin-top: 5px
+}
+
+.formulario-caixa-2:hover {
+    background-color: rgb(237, 234, 234);
+    
+}
+
+#link-2b {
+    text-align: center;
+    text-decoration: none;
+    color: lightblue;
+    margin: auto;
+}

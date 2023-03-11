@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body, html {
+        background-image: linear-gradient(to bottom, #490449, #560556, #630663, #710771, #7f087f, #7e3098, #7a4ab0, #7460c5, #5f85da, #61a4e2, #80c0e4, #add8e6);
+        
+    }
+
+    #login {
+        width: 80vw;
+        height: 340px; /* new */
+    }
+    #container-imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    #container-formulario {
+        float: right;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:992px ) and (max-width:1920px) {
+    body, html {
+        background-image: linear-gradient(to bottom, #490449, #560556, #630663, #710771, #7f087f, #7e3098, #7a4ab0, #7460c5, #5f85da, #61a4e2, #80c0e4, #add8e6);
+        
+    }
+
+    #login {
+        width: 950px; /* Faz com que pare de crescer */
+        height: 380px; /* new */
+    }
+    #container-imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    #container-formulario {
+        float: left;
+        width: 47%; /* Se deixar muito grande some */
+    }
+}
